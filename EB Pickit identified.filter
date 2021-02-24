@@ -3432,7 +3432,6 @@ ItemLevel >= 60
 Rarity Rare
 Class == "Bows" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves" "Body Armours"
 ItemLevel <= 74
-Height = 3
 
 # FilterBlade: Conditional Entry
 Show 
