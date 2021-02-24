@@ -3447,6 +3447,14 @@ SetTextColor 0 0 0 255
 
 # FilterBlade: Conditional Entry
 Show 
+SetBorderColor 0 0 200
+SetFontSize 18
+ItemLevel >= 60
+Rarity Rare
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Thrusting One Hand Swords" "Wands" "Quivers"
+
+# FilterBlade: Conditional Entry
+Show 
 SetBorderColor 200 0 0
 SetFontSize 18
 ItemLevel >= 75
