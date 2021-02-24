@@ -3404,7 +3404,6 @@ SetFontSize 18
 ItemLevel >= 60
 Rarity Rare
 Class == "Helmets"
-ItemLevel <= 100
 
 # FilterBlade: Conditional Entry
 Show 
@@ -3413,7 +3412,6 @@ SetFontSize 18
 ItemLevel >= 60
 Rarity Rare
 Class == "Gloves"
-ItemLevel <= 100
 
 # FilterBlade: Conditional Entry
 Show 
@@ -3421,7 +3419,6 @@ SetBorderColor 0 200 162
 SetFontSize 18
 ItemLevel >= 60
 Rarity Rare
-ItemLevel <= 100
 Class == "Boots"
 
 # FilterBlade: Conditional Entry
@@ -3431,9 +3428,6 @@ SetFontSize 18
 ItemLevel >= 60
 Rarity Rare
 Class == "Bows" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves" "Body Armours"
-ItemLevel <= 100
-Height = 3
-Width = 1
 
 # FilterBlade: Conditional Entry
 Show 
@@ -3442,7 +3436,6 @@ SetFontSize 18
 ItemLevel >= 60
 Rarity Rare
 Class == "Amulets" "Belts" "Rings"
-ItemLevel <= 100
 SetBackgroundColor 170 225 70
 SetTextColor 0 0 0 255
 
