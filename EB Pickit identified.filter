@@ -2752,14 +2752,14 @@ Show # %HS4
 	SetBackgroundColor 120 120 0 225        # BACKGROUND:	 Rare Jewel
 	MinimapIcon 2 Blue Diamond
 
-Show # %H3
-	Rarity <= Magic
-	Class "Jewel"
-	BaseType "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
-	SetFontSize 18
-	SetTextColor 0 100 255                  # TEXTCOLOR:	 Jewel Magic
-	SetBorderColor 0 75 250                 # BORDERCOLOR:	 Magic Jewel
-	SetBackgroundColor 0 20 40 255          # BACKGROUND:	 Jewel Magic
+Hide # %H3
+Rarity <= Magic
+Class "Jewel"
+BaseType "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
+SetFontSize 18
+SetTextColor 0 100 255                   # TEXTCOLOR:	 Jewel Magic
+SetBorderColor 0 75 250                  # BORDERCOLOR:	 Magic Jewel
+SetBackgroundColor 0 20 40 255           # BACKGROUND:	 Jewel Magic
 
 #===============================================================================================================
 # [[2400]] Normal/Magic Crafting Bases
