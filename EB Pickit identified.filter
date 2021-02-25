@@ -852,44 +852,44 @@ MinimapIcon 0 Yellow Cross
 #	PlayEffect Yellow
 #	MinimapIcon 0 Yellow Cross
 
-# Show # %D5 $tier->t2c $type->rare->newinfluences
-# HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-# ItemLevel >= 84
-# DropLevel > 55
-# Rarity <= Rare
-# Class "Boots" "Gloves" "Helmets" "Shields"
-# SetFontSize 45
-# SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
-# SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
-# SetBackgroundColor 20 110 220           # BACKGROUND:	 ShaperElder T2
-# PlayAlertSound 3 300                    # DROPSOUND:	 Unique
-# PlayEffect Yellow
-# MinimapIcon 0 Yellow Cross
+Show  # %D5 $tier->t2c $type->rare->newinfluences
+HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
+ItemLevel >= 84
+DropLevel > 55
+Rarity <= Rare
+Class "Body Armours" "Boots" "Gloves" "Helmets" "Shields"
+SetFontSize 18
+SetTextColor 255 255 255 255              # TEXTCOLOR:	 Cosmetic White
+SetBorderColor 255 255 255 255            # BORDERCOLOR:	 T1 highlight
+SetBackgroundColor 20 110 220             # BACKGROUND:	 ShaperElder T2
+PlayEffect Yellow
+MinimapIcon 0 Yellow Cross
+PlayAlertSound 3 300
 
-# Show # %D5 $tier->t2cc $type->rare->newinfluences
-# HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-# ItemLevel >= 83
-# Rarity <= Rare
-# Class "Amulets" "Belts" "Rings"
-# SetFontSize 45
-# SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
-# SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
-# SetBackgroundColor 20 110 220           # BACKGROUND:	 ShaperElder T2
-# PlayAlertSound 3 300                    # DROPSOUND:	 Unique
-# PlayEffect Yellow
-# MinimapIcon 0 Yellow Cross
+Show  # %D5 $tier->t2cc $type->rare->newinfluences
+HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
+ItemLevel >= 83
+Rarity <= Rare
+Class "Amulets" "Belts" "Rings"
+SetFontSize 18
+SetTextColor 255 255 255 255              # TEXTCOLOR:	 Cosmetic White
+SetBorderColor 255 255 255 255            # BORDERCOLOR:	 T1 highlight
+SetBackgroundColor 20 110 220             # BACKGROUND:	 ShaperElder T2
+PlayEffect Yellow
+MinimapIcon 0 Yellow Cross
+PlayAlertSound 3 300
 
 #------------------------------------
 #   [1102] Item Layer - T3 - REMAINING RULES
 #------------------------------------
 
 Show # $tier->rest->i86 $type->rare->newinfluence
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-	ItemLevel >= 86
-	Rarity <= Rare
-	SetFontSize 18
-	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
-	SetBackgroundColor 50 130 165           # BACKGROUND:	 Shaper T3
+HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
+ItemLevel >= 86
+Rarity <= Rare
+SetFontSize 18
+SetBorderColor 255 255 255 255           # BORDERCOLOR:	 T1 highlight
+SetBackgroundColor 50 130 165            # BACKGROUND:	 Shaper T3
 
 Show # %D5 $tier->rest-trinkets $type->rare->influence
 	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
@@ -2006,17 +2006,17 @@ Show # %D1 $type->expl->league
 	SetTextColor 255 190 0                  # TEXTCOLOR:	 Rare 75+
 	SetBorderColor 0 240 190 180            # BORDERCOLOR:	 Special Base Low Tier
 
-# Show # rare items with abyss sockets!
-# 	Rarity <= Rare
-# 	SocketGroup "A"
-# 	Class "Body Armour" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand" "Quivers" "Rune Dagger" "Sceptre" "Shields" "Staves" "Two Hand" "Wand" "Warstaves"
-# 	SetFontSize 18
-# 	SetTextColor 0 240 190 240
-# 	SetBorderColor 0 240 190 240          # BORDERCOLOR:	 Special Base
-# 	SetBackgroundColor 0 75 30 255        # BACKGROUND:	 Rare T1
-# 	PlayAlertSound 3 300                  # DROPSOUND:	 Unique
-# 	PlayEffect Blue
-# 	MinimapIcon 0 Purple Diamond
+Show # rare items with abyss sockets!
+	Rarity <= Rare
+	SocketGroup "A"
+	Class "Body Armour" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand" "Quivers" "Rune Dagger" "Sceptre" "Shields" "Staves" "Two Hand" "Wand" "Warstaves"
+	SetFontSize 18
+	SetTextColor 0 240 190 240
+	SetBorderColor 0 240 190 240            # BORDERCOLOR:	 Special Base
+	SetBackgroundColor 0 75 30 255          # BACKGROUND:	 Rare T1
+	PlayEffect Blue
+	MinimapIcon 0 Purple Diamond
+PlayAlertSound 3 300
 
 #------------------------------------
 #   [1505] Delve
@@ -2036,176 +2036,182 @@ Show # $type->expl->league
 #   [1506] Bestiary
 #------------------------------------
 
-# Show # %D4 $type->expl->league
-# 	Identified True
-# 	Class "Amulets" "Belts" "Rings"
-# 	HasExplicitMod "of Craiceann" "of Farrul" "of Fenumus" "of Saqawal"
-# 	SetFontSize 18
-# 	SetBorderColor 0 240 190 240          # BORDERCOLOR:	 Special Base
-# 	SetBackgroundColor 0 75 30 255        # BACKGROUND:	 Rare T1
-# 	PlayAlertSound 3 300                  # DROPSOUND:	 Unique
-# 	PlayEffect White Temp
-# 	MinimapIcon 2 White Diamond
+Show # %D4 $type->expl->league
+	Identified True
+	Class "Amulets" "Belts" "Rings"
+	HasExplicitMod "of Craiceann" "of Farrul" "of Fenumus" "of Saqawal"
+	SetFontSize 18
+	SetBorderColor 0 240 190 240            # BORDERCOLOR:	 Special Base
+	SetBackgroundColor 0 75 30 255          # BACKGROUND:	 Rare T1
+	PlayEffect White Temp
+	MinimapIcon 2 White Diamond
+PlayAlertSound 3 300
 
-# Show # %D2 $type->expl->league
-# 	Identified True
-# 	HasExplicitMod "of Craiceann" "of Farrul" "of Fenumus" "of Saqawal"
-# 	SetFontSize 18
-# 	SetTextColor 255 190 0                # TEXTCOLOR:	 Rare 75+
-# 	SetBorderColor 0 240 190 180          # BORDERCOLOR:	 Special Base Low Tier
+Show # %D2 $type->expl->league
+	Identified True
+	HasExplicitMod "of Craiceann" "of Farrul" "of Fenumus" "of Saqawal"
+	SetFontSize 18
+	SetTextColor 255 190 0                  # TEXTCOLOR:	 Rare 75+
+	SetBorderColor 0 240 190 180            # BORDERCOLOR:	 Special Base Low Tier
 
 #------------------------------------
 #   [1507] Incursion - Matatl - traps and movementspeed
 #------------------------------------
 
-# Show # $type->expl->league
-# 	Identified True
-# 	Rarity Rare
-# 	Class "Boots"
-# 	HasExplicitMod "Matatl's"
-# 	SetFontSize 18
-# 	SetTextColor 255 190 0                # TEXTCOLOR:	 Rare 75+
-# 	SetBorderColor 0 240 190 240          # BORDERCOLOR:	 Special Base
-# 	SetBackgroundColor 0 75 30 255        # BACKGROUND:	 Rare T1
-# 	PlayAlertSound 3 300                  # DROPSOUND:	 Unique
-# 	PlayEffect Blue
-# 	MinimapIcon 2 Blue Diamond
+Show # $type->expl->league
+	Identified True
+	Rarity Rare
+	Class "Boots"
+	SetFontSize 18
+	SetTextColor 255 190 0                  # TEXTCOLOR:	 Rare 75+
+	SetBorderColor 0 240 190 240            # BORDERCOLOR:	 Special Base
+	SetBackgroundColor 0 75 30 255          # BACKGROUND:	 Rare T1
+	PlayEffect Blue
+	MinimapIcon 2 Blue Diamond
+PlayAlertSound 3 300
+HasExplicitMod "Matatl's"
 
 #------------------------------------
 #   [1508] Incursion - Body Armours - Guatelitzi
 #------------------------------------
 
-Hide # %H3 $type->expl->league
+Show # %H3 $type->expl->league
 Identified True
 Rarity Rare
 Class "Body Armour"
-HasExplicitMod "Guatelitzi's"
 SetFontSize 18
 SetTextColor 255 190 0                   # TEXTCOLOR:	 Rare 75+
 SetBorderColor 0 240 190 240             # BORDERCOLOR:	 Special Base
 SetBackgroundColor 0 75 30 255           # BACKGROUND:	 Rare T1
+PlayAlertSound 3 300
+MinimapIcon 2 Blue Diamond
+PlayEffect Blue
+HasExplicitMod "Guatelitzi's"
 
 #------------------------------------
 #   [1509] Incursion - Sumonner Weapons
 #------------------------------------
 
-Hide # %H4 $type->expl->league
+Show # %H4 $type->expl->league
 Identified True
 Rarity Rare
 Class "Claws" "Daggers" "One Hand" "Sceptre" "Staves" "Wand"
-HasExplicitMod "Citaqualotl's"
 SetFontSize 18
 SetTextColor 255 190 0                   # TEXTCOLOR:	 Rare 75+
 SetBorderColor 0 240 190 240             # BORDERCOLOR:	 Special Base
 SetBackgroundColor 0 75 30 255           # BACKGROUND:	 Rare T1
+PlayAlertSound 3 300
+MinimapIcon 2 Blue Diamond
+PlayEffect Blue
+HasExplicitMod "Citaqualotl's"
 
 #------------------------------------
 #   [1510] Incursion - Caster Weapons
 #------------------------------------
 
-# Show # $type->expl->league
-# 	Identified True
-# 	Rarity Rare
-# 	Class "Rune Dagger" "Sceptre" "Staves" "Wand"
-# 	HasExplicitMod "Matatl's" "Tacati" "Topotante's"
-# 	SetFontSize 18
-# 	SetTextColor 255 190 0                # TEXTCOLOR:	 Rare 75+
-# 	SetBorderColor 0 240 190 240          # BORDERCOLOR:	 Special Base
-# 	SetBackgroundColor 0 75 30 255        # BACKGROUND:	 Rare T1
-# 	PlayAlertSound 3 300                  # DROPSOUND:	 Unique
-# 	PlayEffect Blue
-# 	MinimapIcon 2 Blue Diamond
+Show # $type->expl->league
+	Identified True
+	Rarity Rare
+	Class "Rune Dagger" "Sceptre" "Staves" "Wand"
+	SetFontSize 18
+	SetTextColor 255 190 0                  # TEXTCOLOR:	 Rare 75+
+	SetBorderColor 0 240 190 240            # BORDERCOLOR:	 Special Base
+	SetBackgroundColor 0 75 30 255          # BACKGROUND:	 Rare T1
+	PlayEffect Blue
+	MinimapIcon 2 Blue Diamond
+PlayAlertSound 3 300
+HasExplicitMod "Matatl's" "Tacati" "Topotante's"
 
 #------------------------------------
 #   [1511] Incursion - Normal Weapons
 #------------------------------------
 
-# Show # $type->expl->league
-# 	Identified True
-# 	DropLevel >= 50
-# 	Rarity Rare
-# 	Class "Bows" "Claws" "Daggers" "Thrusting"
-# 	HasExplicitMod "Topotante's"
-# 	SetFontSize 18
-# 	SetTextColor 255 190 0                # TEXTCOLOR:	 Rare 75+
-# 	SetBorderColor 0 240 190 240          # BORDERCOLOR:	 Special Base
-# 	SetBackgroundColor 0 75 30 255        # BACKGROUND:	 Rare T1
-# 	PlayAlertSound 3 300                  # DROPSOUND:	 Unique
-# 	PlayEffect Blue
-# 	MinimapIcon 2 Blue Diamond
+Show # $type->expl->league
+	Identified True
+	DropLevel >= 50
+	Rarity Rare
+	Class "Bows" "Claws" "Daggers" "Thrusting"
+	SetFontSize 18
+	SetTextColor 255 190 0                  # TEXTCOLOR:	 Rare 75+
+	SetBorderColor 0 240 190 240            # BORDERCOLOR:	 Special Base
+	SetBackgroundColor 0 75 30 255          # BACKGROUND:	 Rare T1
+	PlayEffect Blue
+	MinimapIcon 2 Blue Diamond
+PlayAlertSound 3 300
+HasExplicitMod "Topotante's"
 
-# Show # $type->expl->league
-# 	Identified True
-# 	DropLevel >= 50
-# 	Rarity Rare
-# 	Class "Bows" "Claws" "Daggers" "One Hand" "Two Hand" "Warstaves"
-# 	HasExplicitMod "of Tacati" "Tacati's"
-# 	SetFontSize 18
-# 	SetTextColor 255 190 0                # TEXTCOLOR:	 Rare 75+
-# 	SetBorderColor 0 240 190 240          # BORDERCOLOR:	 Special Base
-# 	SetBackgroundColor 0 75 30 255        # BACKGROUND:	 Rare T1
-# 	PlayAlertSound 3 300                  # DROPSOUND:	 Unique
-# 	PlayEffect Blue
-# 	MinimapIcon 2 Blue Diamond
+Show # $type->expl->league
+	Identified True
+	DropLevel >= 50
+	Rarity Rare
+	Class "Bows" "Claws" "Daggers" "One Hand" "Two Hand" "Warstaves"
+	SetFontSize 18
+	SetTextColor 255 190 0                  # TEXTCOLOR:	 Rare 75+
+	SetBorderColor 0 240 190 240            # BORDERCOLOR:	 Special Base
+	SetBackgroundColor 0 75 30 255          # BACKGROUND:	 Rare T1
+	PlayEffect Blue
+	MinimapIcon 2 Blue Diamond
+PlayAlertSound 3 300
+HasExplicitMod "of Tacati" "Tacati's"
 
 #------------------------------------
 #   [1512] Incursion - Rings, Amulets
 #------------------------------------
 
-# Show # $type->expl->league
-# 	Identified True
-# 	Rarity Rare
-# 	Class "Amulets" "Belts" "Rings"
-# 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
-# 	SetFontSize 18
-# 	SetTextColor 255 190 0                # TEXTCOLOR:	 Rare 75+
-# 	SetBorderColor 0 240 190 240          # BORDERCOLOR:	 Special Base
-# 	SetBackgroundColor 0 75 30 255        # BACKGROUND:	 Rare T1
-# 	PlayAlertSound 3 300                  # DROPSOUND:	 Unique
-# 	PlayEffect Blue
-# 	MinimapIcon 2 Blue Diamond
+Show # $type->expl->league
+	Identified True
+	Rarity Rare
+	Class "Amulets" "Belts" "Rings"
+	SetFontSize 18
+	SetTextColor 255 190 0                  # TEXTCOLOR:	 Rare 75+
+	SetBorderColor 0 240 190 240            # BORDERCOLOR:	 Special Base
+	SetBackgroundColor 0 75 30 255          # BACKGROUND:	 Rare T1
+	PlayEffect Blue
+	MinimapIcon 2 Blue Diamond
+PlayAlertSound 3 300
+HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
 
 #------------------------------------
 #   [1513] Incursion - Gloves, Helmets
 #------------------------------------
 
-# Show # $type->expl->league
-# 	Identified True
-# 	Rarity Rare
-# 	Class "Gloves" "Helmets"
-# 	HasExplicitMod "Puhuarte" "Topotante"
-# 	SetFontSize 18
-# 	SetTextColor 255 190 0                # TEXTCOLOR:	 Rare 75+
-# 	SetBorderColor 0 240 190 240          # BORDERCOLOR:	 Special Base
-# 	SetBackgroundColor 0 75 30 255        # BACKGROUND:	 Rare T1
-# 	PlayAlertSound 3 300                  # DROPSOUND:	 Unique
-# 	PlayEffect Blue
-# 	MinimapIcon 2 Blue Diamond
+Show # $type->expl->league
+	Identified True
+	Rarity Rare
+	Class "Gloves" "Helmets"
+	SetFontSize 18
+	SetTextColor 255 190 0                  # TEXTCOLOR:	 Rare 75+
+	SetBorderColor 0 240 190 240            # BORDERCOLOR:	 Special Base
+	SetBackgroundColor 0 75 30 255          # BACKGROUND:	 Rare T1
+	PlayEffect Blue
+	MinimapIcon 2 Blue Diamond
+PlayAlertSound 3 300
+HasExplicitMod "Puhuarte" "Topotante"
 
 #------------------------------------
 #   [1514] Incursion General
 #------------------------------------
 
-# Show # %D3 $type->expl->league
-# 	Identified True
-# 	Rarity Rare
-# 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
-# 	SetFontSize 18
-# 	SetTextColor 255 190 0                # TEXTCOLOR:	 Rare 75+
-# 	SetBorderColor 0 240 190 240          # BORDERCOLOR:	 Special Base
-# 	PlayAlertSound 3 300                  # DROPSOUND:	 Unique
-# 	PlayEffect Blue Temp
-# 	MinimapIcon 2 Blue Diamond
+Show # %D3 $type->expl->league
+	Identified True
+	Rarity Rare
+	SetFontSize 18
+	SetTextColor 255 190 0                  # TEXTCOLOR:	 Rare 75+
+	SetBorderColor 0 240 190 240            # BORDERCOLOR:	 Special Base
+	PlayEffect Blue Temp
+	MinimapIcon 2 Blue Diamond
+PlayAlertSound 3 300
+HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
 
 # Show # %D3 $type->expl->league
 # 	Identified True
 # 	Rarity Magic
-# 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
 # 	SetFontSize 18
 # 	SetBorderColor 0 240 190 240          # BORDERCOLOR:	 Special Base
-# 	PlayAlertSound 3 300                  # DROPSOUND:	 Unique
 # 	PlayEffect Blue Temp
 # 	MinimapIcon 2 Blue Diamond
+# PlayAlertSound 3 300
+# HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
 
 #------------------------------------
 #   [1515] Warbands
@@ -2213,10 +2219,10 @@ SetBackgroundColor 0 75 30 255           # BACKGROUND:	 Rare T1
 
 # Show # %D2 $type->expl->league
 # 	Identified True
-# 	HasExplicitMod "Betrayer's" "Brinerot" "Deceiver's" "Mutewind" "Redblade" "Turncoat's"
 # 	SetFontSize 18
 # 	SetBorderColor 0 240 190 180          # BORDERCOLOR:	 Special Base Low Tier
 # 	SetBackgroundColor 0 0 0 255          # BACKGROUND:	 Neutral T2
+# HasExplicitMod "Betrayer's" "Brinerot" "Deceiver's" "Mutewind" "Redblade" "Turncoat's"
 
 #===============================================================================================================
 # [[1600]] Cluster Jewels
@@ -2333,13 +2339,16 @@ Show
 # [[1700]] Enchanted Items
 #===============================================================================================================
 
-Hide 
+Show 
 AnyEnchantment True
 Rarity <= Rare
 Class "Body Armours" "Bows" "Claws" "Daggers" "Jewel" "One Hand" "Quivers" "Rune Dagger" "Sceptre" "Shields" "Staves" "Two Hand" "Wand" "Warstaves"
 SetFontSize 18
 SetTextColor 0 240 190 240
 SetBorderColor 0 240 190 240             # BORDERCOLOR:	 Special Base
+PlayAlertSound 3 300
+MinimapIcon 1 Blue Diamond
+PlayEffect Blue
 
 # Show 
 # 	AnyEnchantment True
@@ -2607,16 +2616,22 @@ SetBackgroundColor 0 0 0 185             # BACKGROUND:	 Neutral T3
 # [[2200]] Heist Experimental BaseTypes
 #===============================================================================================================
 
-Hide # top tier bases
-BaseType "Accumulator Wand" "Alternating Sceptre" "Anarchic Spiritblade" "Apex Cleaver" "Astrolabe Amulet" "Banishing Blade" "Battery Staff" "Boom Mace" "Cogwork Ring" "Cold-attuned Buckler" "Eventuality Rod" "Geodesic Ring" "Heat-attuned Tower Shield" "Impact Force Propagator" "Infernal Blade" "Mechalarm Belt" "Micro-Distillery Belt" "Oscillating Sceptre" "Pneumatic Dagger" "Psychotic Axe" "Simplex Amulet" "Solarine Bow" "Stabilising Sceptre" "Transfer-attuned Spirit Shield" "Void Fangs"
-SetFontSize 18
-SetTextColor 0 240 190 240
-SetBorderColor 0 240 190 240             # BORDERCOLOR:	 Special Base
+# Show # top tier bases
+# SetFontSize 18
+# SetTextColor 0 240 190 240
+# SetBorderColor 0 240 190 240           # BORDERCOLOR:	 Special Base
+# PlayAlertSound 3 300
+# MinimapIcon 0 Yellow Diamond
+# PlayEffect Red
+# BaseType "Accumulator Wand" "Alternating Sceptre" "Anarchic Spiritblade" "Apex Cleaver" "Astrolabe Amulet" "Banishing Blade" "Battery Staff" "Boom Mace" "Cogwork Ring" "Cold-attuned Buckler" "Eventuality Rod" "Geodesic Ring" "Heat-attuned Tower Shield" "Impact Force Propagator" "Infernal Blade" "Mechalarm Belt" "Micro-Distillery Belt" "Oscillating Sceptre" "Pneumatic Dagger" "Psychotic Axe" "Simplex Amulet" "Solarine Bow" "Stabilising Sceptre" "Transfer-attuned Spirit Shield" "Void Fangs"
 
-Hide # lower tier bases
-BaseType "Assembler Wand" "Blasting Blade" "Blunt Force Condenser" "Capacity Rod" "Capricious Spiritblade" "Congregator Wand" "Crack Mace" "Crushing Force Magnifier" "Disapprobation Axe" "Endothermic Buckler" "Exhausting Spirit Shield" "Exothermic Tower Shield" "Fickle Spiritblade" "Flare Mace" "Flashfire Blade" "Flickerflame Blade" "Foundry Bow" "Hedron Bow" "Hollowpoint Dagger" "Honed Cleaver" "Magmatic Tower Shield" "Malign Fangs" "Maltreatment Axe" "Polar Buckler" "Potentiality Rod" "Pressurised Dagger" "Prime Cleaver" "Rebuking Blade" "Reciprocation Staff" "Shadow Fangs" "Subsuming Spirit Shield" "Transformer Staff"
-SetFontSize 18
-SetBorderColor 0 240 190 240             # BORDERCOLOR:	 Special Base
+# Show # lower tier bases
+# SetFontSize 18
+# SetBorderColor 0 240 190 240           # BORDERCOLOR:	 Special Base
+# PlayAlertSound 2 300
+# MinimapIcon 1 Yellow Diamond
+# PlayEffect Yellow
+# BaseType "Assembler Wand" "Blasting Blade" "Blunt Force Condenser" "Capacity Rod" "Capricious Spiritblade" "Congregator Wand" "Crack Mace" "Crushing Force Magnifier" "Disapprobation Axe" "Endothermic Buckler" "Exhausting Spirit Shield" "Exothermic Tower Shield" "Fickle Spiritblade" "Flare Mace" "Flashfire Blade" "Flickerflame Blade" "Foundry Bow" "Hedron Bow" "Hollowpoint Dagger" "Honed Cleaver" "Magmatic Tower Shield" "Malign Fangs" "Maltreatment Axe" "Polar Buckler" "Potentiality Rod" "Pressurised Dagger" "Prime Cleaver" "Rebuking Blade" "Reciprocation Staff" "Shadow Fangs" "Subsuming Spirit Shield" "Transformer Staff"
 
 #===============================================================================================================
 # [[2300]] Rare/Magic Jewels
@@ -2724,16 +2739,16 @@ Show # %H3
 # These are items that have a particullary high price at ILVL 86+.
 # This list is based on poe.ninja data
 
-# Show # $type->generalcrafting $tier->eco
-# 	ItemLevel >= 86
-# 	BaseType "Ornate Quiver"
-# 	SetFontSize 18
-# 	SetTextColor 0 0 0 255                # TEXTCOLOR:	 High Special Base
-# 	SetBorderColor 0 0 0 255              # BORDERCOLOR:	 Neutral T1
-# 	SetBackgroundColor 255 255 255 255    # BACKGROUND:	 T0 Drop
-# 	PlayAlertSound 6 300                  # DROPSOUND:	 T0 Drop
-# 	PlayEffect Red
-# 	MinimapIcon 0 Red Diamond
+Show # $type->generalcrafting $tier->eco
+	ItemLevel >= 86
+	BaseType "Ornate Quiver"
+	SetFontSize 18
+	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
+	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
+	SetBackgroundColor 255 255 255 255      # BACKGROUND:	 T0 Drop
+	PlayEffect Red
+	MinimapIcon 0 Red Diamond
+PlayAlertSound 6 300
 
 #------------------------------------
 #   [2402] 86+ Endgame crafting rules
@@ -3415,7 +3430,6 @@ ItemLevel >= 60
 Rarity Rare
 Class == "Bows" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves" "Body Armours"
 ItemLevel <= 74
-Height = 3
 
 # FilterBlade: Conditional Entry
 Show 
@@ -3457,39 +3471,39 @@ Class == "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Warstaves"
 # [[3300]] RARE ITEMS - SPECIAL BASES
 #===============================================================================================================
 
-# Show # %RECEIVER->CRAFTING->T1 $type->rarecraft->i86 $tier->t1
-# 	ItemLevel >= 86
-# 	Rarity Rare
-# 	BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt" "Vermillion Ring"
-# 	SetFontSize 18
-# 	SetTextColor 255 255 255 255
-# 	SetBorderColor 255 255 255 255
-# 	SetBackgroundColor 255 125 0 255      # BACKGROUND:	Crafting-base-86
-# 	PlayAlertSound 3 300                  # DROPSOUND:	 Unique
-# 	PlayEffect Yellow
-# 	MinimapIcon 1 Yellow Diamond
+Show # %RECEIVER->CRAFTING->T1 $type->rarecraft->i86 $tier->t1
+	ItemLevel >= 86
+	Rarity Rare
+	BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt" "Vermillion Ring"
+	SetFontSize 18
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 255 125 0 255        # BACKGROUND:	Crafting-base-86
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Diamond
+PlayAlertSound 3 300
 
-# Show # %D5 %RECEIVER->CRAFTING->T1 $type->rarecraft->i84 $tier->t1
-# 	ItemLevel <= 85
-# 	ItemLevel >= 84
-# 	Rarity Rare
-# 	BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt" "Vermillion Ring"
-# 	SetFontSize 18
-# 	SetTextColor 0 0 0 255
-# 	SetBorderColor 0 0 0 255
-# 	SetBackgroundColor 255 125 0 255      # BACKGROUND:	Crafting-base-86
-# 	PlayEffect White
-# 	MinimapIcon 2 White Diamond
+Show # %D5 %RECEIVER->CRAFTING->T1 $type->rarecraft->i84 $tier->t1
+	ItemLevel <= 85
+	ItemLevel >= 84
+	Rarity Rare
+	BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt" "Vermillion Ring"
+	SetFontSize 18
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 255 125 0 255        # BACKGROUND:	Crafting-base-86
+	PlayEffect White
+	MinimapIcon 2 White Diamond
 
-# Show # %D4 %RECEIVER->CRAFTING->T1 $type->rarecraft->rest $tier->t1
-# 	ItemLevel <= 83
-# 	ItemLevel >= 65
-# 	Rarity Rare
-# 	BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt" "Vermillion Ring"
-# 	SetFontSize 18
-# 	SetTextColor 0 0 0 255
-# 	SetBorderColor 0 240 190 240
-# 	SetBackgroundColor 170 225 70 255     # BACKGROUND:	 Trinket T1
+Show # %D4 %RECEIVER->CRAFTING->T1 $type->rarecraft->rest $tier->t1
+	ItemLevel <= 83
+	ItemLevel >= 65
+	Rarity Rare
+	BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt" "Vermillion Ring"
+	SetFontSize 18
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 240 190 240
+	SetBackgroundColor 170 225 70 255       # BACKGROUND:	 Trinket T1
 
 #===============================================================================================================
 # [[3400]] RARE ITEMS - LEVEL 86 Crafting
@@ -3797,6 +3811,26 @@ SetFontSize 18
 #------------------------------------
 #   [3604] 1H Rune Dagger
 #------------------------------------
+
+# FilterBlade: Conditional Entry
+Show 
+Corrupted True
+Rarity Rare
+ItemLevel >= 60
+SetFontSize 18
+SetBorderColor 255 0 0 255
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves" "Body Armours" "Boots" "Gloves" "Helmets" "Shields" "Amulets" "Belts" "Quivers" "Rings"
+SetBackgroundColor 255 0 0 84
+
+# FilterBlade: Conditional Entry
+Show 
+Identified True
+Rarity Rare
+ItemLevel >= 60
+SetFontSize 18
+SetBorderColor 255 146 0 255
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves" "Body Armours" "Boots" "Gloves" "Helmets" "Shields" "Amulets" "Belts" "Quivers" "Rings"
+SetBackgroundColor 100 100 255 84
 
 # Show # %D2 $type->rr $tier->t3runedaggers-up $size->small
 # 	ItemLevel >= 75
@@ -4580,7 +4614,6 @@ SetFontSize 18
 # 	SetTextColor 255 190 0 255            # TEXTCOLOR:	 T3 Rare
 # 	SetBorderColor 0 0 0                  # BORDERCOLOR:	 Neutral T1.5
 # 	SetBackgroundColor 0 0 0 219          # BACKGROUND:	 Neutral T4
-# SetFontSize 18
 
 # Show # %D2 %UP $type->rr $tier->t3body
 # 	ItemLevel >= 65
@@ -4590,7 +4623,6 @@ SetFontSize 18
 # 	SetTextColor 220 220 119 220          # TEXTCOLOR:	 T3 Rare
 # 	SetBorderColor 0 0 0                  # BORDERCOLOR:	 Neutral T1.5
 # 	SetBackgroundColor 0 0 0 219          # BACKGROUND:	 Neutral T4
-# SetFontSize 18
 
 # Show # %D1
 # 	ItemLevel >= 75
@@ -4599,7 +4631,6 @@ SetFontSize 18
 # 	SetTextColor 255 190 0 255            # TEXTCOLOR:	 T3 Rare
 # 	SetBorderColor 0 0 0                  # BORDERCOLOR:	 Neutral T1.5
 # 	SetBackgroundColor 0 0 0 150          # BACKGROUND:	 Neutral T6
-# SetFontSize 18
 
 # Show # %D1 %UP
 # 	ItemLevel >= 65
@@ -4608,7 +4639,6 @@ SetFontSize 18
 # 	SetTextColor 220 220 119 220          # TEXTCOLOR:	 T3 Rare
 # 	SetBorderColor 0 0 0                  # BORDERCOLOR:	 Neutral T1.5
 # 	SetBackgroundColor 0 0 0 150          # BACKGROUND:	 Neutral T6
-# SetFontSize 18
 
 #------------------------------------
 #   [3623] OH: Shields
