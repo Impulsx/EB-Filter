@@ -2964,19 +2964,19 @@ MinimapIcon 0 Red Diamond
 # 	AreaLevel <= 72
 # 	AreaLevel >= 66
 # 	Rarity <= Magic
-# 	BaseType "Basalt Flask" "Diamond Flask" "Granite Flask" "Jade Flask" "Quartz Flask" "Quicksilver Flask" "Silver Flask" "Stibnite Flask" "Sulphur Flask"
+# 	BaseType "Quicksilver Flask" "Bismuth Flask" "Stibnite Flask" "Amethyst Flask" "Ruby Flask" "Sapphire Flask" "Topaz Flask" "Silver Flask" "Aquamarine Flask" "Granite Flask" "Jade Flask" "Quartz Flask" "Sulphur Flask" "Basalt Flask" "Diamond Flask"
 # 	SetFontSize 18
 # 	SetBorderColor 50 200 125             # BORDERCOLOR:	 Flask
 # 	SetBackgroundColor 25 100 75          # BACKGROUND:	 Flasks
 
-Show # %D1
-	AreaLevel <= 72
-	AreaLevel >= 66
-	Rarity <= Magic
-	Class "Utility Flasks"
-	SetFontSize 36
-	SetBorderColor 50 200 125               # BORDERCOLOR:	 Flask
-	SetBackgroundColor 25 100 75            # BACKGROUND:	 Flasks
+Hide # %D1
+AreaLevel <= 72
+AreaLevel >= 66
+Rarity <= Magic
+Class "Utility Flasks"
+SetFontSize 18
+SetBorderColor 50 200 125                # BORDERCOLOR:	 Flask
+SetBackgroundColor 25 100 75             # BACKGROUND:	 Flasks
 
 #------------------------------------
 #   [2704] Quality Flask recipes
