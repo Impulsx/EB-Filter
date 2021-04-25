@@ -1,15 +1,13 @@
 # EB-Filter
 Loot filter for PoE to run with EB
 
-No longer seporate Unid & Id versions - Will work on these
-
-[[
+_____________
 
 Unid - Hides more like rares not used for chaos recipe
 
 Id - Shows all rares
 
-]]
+_____________
 
 Hides all things EB pickits will ignore, Shows all ilvl60+ rares items, all currency, rare jewels, unique, and div cards.
 
