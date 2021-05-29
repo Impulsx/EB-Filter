@@ -11,6 +11,7 @@ UNID:
 - [x] Rare jewels 
 - [x] Uniques 
 - [x] Div cards
+- [x] HH chancing
 
 ID: 
 - [x] All Rares
@@ -18,6 +19,8 @@ ID:
 - [x] Rare jewels 
 - [x] Uniques 
 - [x] Div cards
+- [x] HH chancing
+
 ```
 _____________
 
@@ -29,9 +32,11 @@ UNID:
 - [ ] All magic/normal items 
 - [ ] Rares < ilvl60 
 - [ ] Rares not used in chaos recipe
+- [ ] Corrupted Maps
 
 ID: 
 - [ ] All magic/normal items
+- [ ] Corrupted Maps
 ```
 _____________
 Also makes all font/boxes as small as filter allows. 
