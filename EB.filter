@@ -3089,14 +3089,14 @@ Show # %D1 $type->chancing $tier->hh
 	SetBorderColor 0 150 0 90
 SetFontSize 1
 
-#Show # %D1 $type->chancing $tier->t2
-#	Corrupted False
-#	Mirrored False
-#	Rarity Normal
-#	BaseType == "Champion Kite Shield" "Ezomyte Dagger"
-#	SetTextColor 255 255 255 255
-#	SetBorderColor 0 150 0 90
-#SetFontSize 1
+Show # %D1 $type->chancing $tier->t2
+	Corrupted False
+	Mirrored False
+	Rarity Normal
+	BaseType == "Champion Kite Shield" #"Ezomyte Dagger"
+	SetTextColor 255 255 255 255
+	SetBorderColor 0 150 0 90
+SetFontSize 1
 
 #===============================================================================================================
 # [[1300]] Endgame Flasks
