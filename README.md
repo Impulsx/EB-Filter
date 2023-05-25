@@ -3,23 +3,16 @@
 
 Shows: :godmode:
 _____________
-```
-UNID: 
-- [x] Rares > ilvl60 
+``` 
+- [x] Rares > ilvl60 < ilvl74 except rings & amulets
 - [x] Rares only used in chaos recipe 
 - [x] All currency 
+- [x] Chrome Recipes
 - [x] Rare jewels 
 - [x] Uniques 
 - [x] Div cards
-- [x] HH chancing
+- [x] HH/MB/Squire/Aegis Aurora chancing
 
-ID: 
-- [x] All Rares
-- [x] All currency 
-- [x] Rare jewels 
-- [x] Uniques 
-- [x] Div cards
-- [x] HH chancing
 
 ```
 _____________
@@ -28,15 +21,11 @@ _____________
 Hides: :finnadie:
 _____________
 ```
-UNID: 
+ 
 - [ ] All magic/normal items 
-- [ ] Rares < ilvl60 
+- [ ] Rares < ilvl60 > ilvl74 besides rings & amulets
 - [ ] Rares not used in chaos recipe
-- [ ] Corrupted Maps
 
-ID: 
-- [ ] All magic/normal items
-- [ ] Corrupted Maps
 ```
 _____________
 Also makes all font/boxes as small as filter allows. 
