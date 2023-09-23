@@ -2932,45 +2932,45 @@ Show # %D2 $type->crafting->perfectarmours $tier->t3
 #------------------------------------
 # !! Waypoint c4.recipes.rgb.all : "Recipes - Endgame chromatic recipes (normal and magic RGBs)"
 
-Show # %H2 $type->endgamergb $tier->rgbsmall1
+Hide # %H2 $type->endgamergb $tier->rgbsmall1
+Width 2
+Height 2
+Rarity Normal Magic
+SocketGroup "RGB"
+SetFontSize 18
+SetTextColor 0 0 0 255
+SetBorderColor 200 200 200 255
+SetBackgroundColor 130 110 110 255
+
+Hide # %H2 $type->endgamergb $tier->rgbsmall2
+Width 1
+Height <= 4
+Rarity Normal Magic
+SocketGroup "RGB"
+SetFontSize 18
+SetTextColor 0 0 0 255
+SetBorderColor 200 200 200 255
+SetBackgroundColor 130 110 110 255
+
+Hide # %H0 $type->endgamergb $tier->rgblarge
 	Width 2
-	Height 2
+	Height 4
 	Rarity Normal Magic
 	SocketGroup "RGB"
 	SetFontSize 18
 	SetTextColor 0 0 0 255
-	SetBorderColor 200 200 200 255
+	SetBorderColor 0 0 0 255
 	SetBackgroundColor 130 110 110 255
 
-Show # %H2 $type->endgamergb $tier->rgbsmall2
-	Width 1
-	Height <= 4
+Hide # %H0 $type->endgamergb $tier->rgbmedium
+	Width 2
+	Height 3
 	Rarity Normal Magic
 	SocketGroup "RGB"
 	SetFontSize 18
 	SetTextColor 0 0 0 255
-	SetBorderColor 200 200 200 255
+	SetBorderColor 0 0 0 255
 	SetBackgroundColor 130 110 110 255
-
-Show # %H0 $type->endgamergb $tier->rgblarge
-Width 2
-Height 4
-Rarity Normal Magic
-SocketGroup "RGB"
-SetFontSize 18
-SetTextColor 0 0 0 255
-SetBorderColor 0 0 0 255
-SetBackgroundColor 130 110 110 255
-
-Show # %H0 $type->endgamergb $tier->rgbmedium
-Width 2
-Height 3
-Rarity Normal Magic
-SocketGroup "RGB"
-SetFontSize 18
-SetTextColor 0 0 0 255
-SetBorderColor 0 0 0 255
-SetBackgroundColor 130 110 110 255
 
 #------------------------------------
 #   [1204] ILVL 86
@@ -3619,92 +3619,6 @@ Show # $type->decorators->rareeg $tier->corruptedraresimplicit
 	SetBorderColor 250 0 0 255
 	Continue
 SetFontSize 18
-
-# FilterBlade: Conditional Entry
-Show
-SetBorderColor 0 0 0
-SetBackgroundColor 150 150 150
-SetFontSize 18
-Rarity Rare
-SocketGroup RGB
-Class == "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "Thrusting One Hand Swords" "One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Warstaves" "Bows" "Rune Daggers" "Quivers" "Sceptres" "Staves" "Wands" "Body Armours" "Boots" "Gloves" "Helmets" "Shields"
-
-# FilterBlade: Conditional Entry
-Show
-SetBorderColor 128 128 128
-SetFontSize 18
-ItemLevel >= 60
-Rarity Rare
-Class == "Helmets"
-ItemLevel <= 74
-SetTextColor 0 128 128
-PlayEffect Cyan Temp
-
-# FilterBlade: Conditional Entry
-Show
-SetBorderColor 128 128 128
-SetFontSize 18
-ItemLevel >= 60
-Rarity Rare
-Class == "Gloves"
-ItemLevel <= 74
-SetTextColor 0 128 128
-PlayEffect Cyan Temp
-
-# FilterBlade: Conditional Entry
-Show
-SetBorderColor 128 128 128
-SetFontSize 18
-ItemLevel >= 60
-Rarity Rare
-ItemLevel <= 74
-Class == "Boots"
-SetTextColor 0 128 128
-PlayEffect Cyan Temp
-
-# FilterBlade: Conditional Entry
-Show
-SetBorderColor 128 128 128
-SetFontSize 18
-ItemLevel >= 60
-Rarity Rare
-Class == "Amulets" "Belts" "Rings"
-ItemLevel <= 100
-SetTextColor 0 128 128
-PlayEffect Cyan Temp
-
-# FilterBlade: Conditional Entry
-Show
-SetBorderColor 128 128 128
-SetFontSize 18
-ItemLevel >= 60
-Rarity Rare
-Class == "Body Armours"
-ItemLevel <= 74
-SetTextColor 0 128 128
-PlayEffect Cyan Temp
-
-# FilterBlade: Conditional Entry
-Show
-SetBorderColor 128 128 128
-SetFontSize 18
-ItemLevel >= 60
-Rarity Rare
-Class == "Bows"
-ItemLevel <= 74
-SetTextColor 0 128 128
-PlayEffect Cyan Temp
-
-# FilterBlade: Conditional Entry
-Show
-SetBorderColor 128 128 128
-SetFontSize 18
-ItemLevel >= 60
-Rarity Rare
-Class == "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Warstaves"
-SetTextColor 0 128 128
-ItemLevel <= 74
-PlayEffect Cyan Temp
 
 #===============================================================================================================
 # [[1800]] Endgame - Rare - Exotic Corrupted Items
@@ -7111,7 +7025,7 @@ SetFontSize 18
 SetBackgroundColor 0 0 0 150
 DisableDropSound True
 Class "Currency"
-BaseType == "Binding Shard" "Engineer's Shard" "Transmutation Shard" "Horizon Shard"
+BaseType == "Transmutation Shard" "Binding Shard" "Horizon Shard" "Engineer's Shard"
 
 Show # $type->currency $tier->t1exalted
 	Class "Currency"
