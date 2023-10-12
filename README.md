@@ -1,7 +1,9 @@
 # EB-Filter :shipit:
 ## Loot filter for PoE to run with EB :trollface:
 ### Outdated readme, eventually:tm:
-Shows: :godmode:
+
+_____________
+# Shows: :godmode:
 _____________
 
 - [x] Rares > ilvl60 < ilvl74 except rings & amulets
@@ -14,9 +16,7 @@ _____________
 - [x] HH/MB/Squire/Aegis Aurora chancing
 
 _____________
-
-
-Hides: :finnadie:
+# Hides: :finnadie:
 _____________
 
 - [ ] All magic/normal items 
