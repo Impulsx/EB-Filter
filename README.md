@@ -4,8 +4,6 @@
 
 _____________
 # Shows: :godmode:
-_____________
-
 - [x] Rares > ilvl60 < ilvl74 except rings & amulets
 - [x] Rares only used in chaos recipe 
 - [x] All currency 
@@ -17,8 +15,6 @@ _____________
 
 _____________
 # Hides: :finnadie:
-_____________
-
 - [ ] All magic/normal items 
 - [ ] Rares < ilvl60 > ilvl74 besides rings & amulets
 - [ ] Rares not used in chaos recipe
