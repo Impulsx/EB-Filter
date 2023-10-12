@@ -1,6 +1,6 @@
 # EB-Filter :shipit:
 ## Loot filter for PoE to run with EB :trollface:
-
+### Outdated readme, eventually:tm:
 Shows: :godmode:
 _____________
 
